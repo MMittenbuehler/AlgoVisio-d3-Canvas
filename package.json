@@ -2,7 +2,6 @@
   "name": "algovisio-d3-canvas",
   "author": "mmittenbuehler",
   "version": "1.0.0",
-  "private": true,
   "files": [
     "dist/*",
     "src/*"
