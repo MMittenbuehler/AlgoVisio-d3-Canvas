@@ -1,0 +1,45 @@
+{
+  "name": "algovisio-d3-canvas",
+  "author": "mmittenbuehler",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MMittenbuehler/AlgoVisio-d3-Canvas.git"
+  },
+  "scripts": {
+    "dev": "node scripts/start.js",
+    "build:prev": "next build && next export",
+    "build:module": "babel src --out-dir dist --presets=@babel/preset-env --plugins=@babel/plugin-proposal-class-properties",
+    "lint": "eslint --fix src/** pages/**"
+  },
+  "peerDependencies": {
+    "d3": "^5.12.0"
+  },
+  "devDependencies": {
+    "@algovisio/container": "0.1.0",
+    "@babel/cli": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "@material-ui/core": "4.5.2",
+    "@material-ui/icons": "4.5.1",
+    "@material-ui/styles": "4.5.2",
+    "babel-eslint": "^10.0.3",
+    "d3": "^5.12.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "express": "4.17.1",
+    "next": "9.1.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
+  }
+}
